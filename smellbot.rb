@@ -39,7 +39,6 @@ def post_smell(post_url: "/smells", tweet:, user:, coords: nil)
     lat = tweet.geo.coordinates[0]
     lng = tweet.geo.coordinates[1]
   end
-  binding.pry
   body = {
     "smell" => {
       "content" => tweet.text,
